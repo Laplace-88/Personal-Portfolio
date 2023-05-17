@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Perfect</title>
+        <link href="assets/css/style.css" rel="stylesheet">
+
+    </head>
+<div class="container">
+    <button class="button" id="about">About Me</button>
+    <button class="button" id="github">Github</button>
+    <button class="button" id="linkedin">LinkedIn</button>
+    <button class="button" id="contact">Contact Me</button>
+</div>
+<script>document.getElementById("github").addEventListener("click", function() {
+        var url = "https://github.com/Laplace-88";
+
+        // Open the URL in a new window or tab
+        window.open(url);
+      });
+      
+      document.getElementById("linkedin").addEventListener("click", function() {
+        var url = "https://www.linkedin.com/in/krish-a-105402135/";
+        window.open(url);
+      });
+      
+      document.getElementById("contact").addEventListener("click", function() {
+        var url = "mailto:krisharora088@gmail.com";
+        window.open(url);
+      });</script>
+    <body>
+        <h1 id="nameHeader">
+            &lt;/&gt;Krish Arora&lt;/&gt;
+            </h1>
+            <div><p id="hiddenText" style="display: none;"><br><br><br>
+                I'm Krish, first year science student in the University of British Columbia, Vancouver. I'm a beginner in <br> 
+                web development and I'm currently learning front-end development, I worked on the front-end of <a href="https://github.com/peer-safe/peer-safe">PeerSafe</a>, a <br>
+                collaborative project I did at nwHacks 2023, held at UBC. That sparked my interest in front-end development <br>
+                and I've been learning it ever since. Moreover, I am also trying to explore other things such as <br> 
+                flutter, SwiftUI, etc.
+                <br><br>
+                Thanks for paying a visit!<br><br>
+            </p></div>
+    </body>
+    <script>var toggleButton = document.getElementById("about");
+        var hiddenText = document.getElementById("hiddenText");
+        
+        toggleButton.addEventListener("click", function() {
+          if (hiddenText.style.display === "none") {
+            hiddenText.style.display = "block";
+          } else {
+            hiddenText.style.display = "none";
+          }
+        });
+        </script>
+</html>
