@@ -1,7 +1,7 @@
 body {
     background-image:url('https://befunkyanonymous.s3.amazonaws.com/AXZWm7_-1684229069325880.jpg');
-    background-size: relative;
-    background-attachment: relative;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 h1 {
