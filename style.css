@@ -61,7 +61,6 @@ h1 {
     size: relative;
     text-align: center; /* Center the text horizontally */
     margin: 0 auto; /* Center the element horizontally */
-    margin-top: 17vh; /* Adjust the top margin to vertically center the element */
     font-family: 'Nova Flat';
     font-size: 22px;
     line-height: 1.5;
