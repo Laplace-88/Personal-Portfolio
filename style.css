@@ -2,6 +2,7 @@ body {
     background-image:url('https://befunkyanonymous.s3.amazonaws.com/AXZWm7_-1684229069325880.jpg');
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
 }
 
 h1 {
@@ -61,7 +62,7 @@ h1 {
     size: relative;
     text-align: center; /* Center the text horizontally */
     margin: 0 auto; /* Center the element horizontally */
-    margin-top: 17vh; /* Adjust the top margin to vertically center the element */
+    margin-top: 10%; /* Adjust the top margin to vertically center the element */
     font-family: 'Nova Flat';
     font-size: 22px;
     line-height: 1.5;
