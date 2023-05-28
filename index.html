@@ -2,7 +2,6 @@
 <html>
     <head>
         <title>Perfect</title>
-        <link rel="stylesheet" href="Personal-Portfolio/style.css">
     </head>
 <div class="container">
     <button class="button" id="about">About Me</button>
@@ -10,6 +9,82 @@
     <button class="button" id="linkedin">LinkedIn</button>
     <button class="button" id="contact">Contact Me</button>
 </div>
+<style>
+body {
+  background-image:url('https://i.imgur.com/2kBZkbp.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+h1 {
+  color: #ffffff;
+  size: relative;
+  text-align: center;
+  font-family: Optima;
+}
+
+.button {
+align-items: center;
+appearance: none;
+background-color: transparent;
+border-radius: 4px;
+border-width: 0;
+box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+box-sizing: border-box;
+color: #ffffff;
+cursor: pointer;
+display: inline-flex;
+font-family: "JetBrains Mono",monospace;
+height: 48px;
+justify-content: center;
+line-height: 1;
+list-style: none;
+overflow: hidden;
+padding-left: 16px;
+padding-right: 16px;
+position: relative;
+text-align: left;
+text-decoration: none;
+transition: box-shadow .15s,transform .15s;
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+white-space: nowrap;
+will-change: box-shadow,transform;
+font-size: 18px;
+}
+
+.button:focus {
+box-shadow: #5e5ef8 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button:hover {
+box-shadow: rgba(143, 158, 255, 0.4) 0 4px 8px, rgba(68, 81, 255, 0.3) 0 7px 13px -3px, #4242ff 0 -3px 0 inset;
+transform: translateY(-2px);
+cursor: pointer;
+}
+
+.button:active {
+box-shadow: #4545ff 0 3px 7px inset;
+}
+
+#hiddenText {
+  color: #ffffff;
+  size: relative;
+  text-align: center; /* Center the text horizontally */
+  margin: 0 auto; /* Center the element horizontally */
+  margin-top: 10%; /* Adjust the top margin to vertically center the element */
+  font-family: 'Nova Flat';
+  font-size: 22px;
+  line-height: 1.5;
+  background-color: transparent;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+</style>
 <script>document.getElementById("github").addEventListener("click", function() {
         var url = "https://github.com/Laplace-88";
 
