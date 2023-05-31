@@ -79,6 +79,7 @@ box-shadow: #4545ff 0 3px 7px inset;
 }
 
 .hidden-text {
+  display: none;
   color: #ffffff;
   size: relative;
   text-align: center; /* Center the text horizontally */
@@ -93,46 +94,47 @@ box-shadow: #4545ff 0 3px 7px inset;
   transition: background-color 0.3s ease;
 }
 </style>
-<script>document.getElementById("github").addEventListener("click", function() {
-        var url = "https://github.com/Laplace-88";
+<body>
+  <div class="container">
+    <button class="button" id="about">About Me</button>
+    <button class="button" id="github">Github</button>
+    <button class="button" id="linkedin">LinkedIn</button>
+    <button class="button" id="contact">Contact Me</button>
+  </div>
+  <h1 id="nameHeader">&lt;/&gt;Krish Arora&lt;/&gt;</h1>
+  <div>
+    <p class="hidden-text">
+      I'm Krish, a first-year science student at the University of British Columbia, Vancouver. I'm a beginner in web development and I'm currently learning front-end development. I worked on the front-end of <a href="https://github.com/peer-safe/peer-safe" class="peersafe">PeerSafe</a>, a collaborative project I did at nwHacks 2023, held at UBC. That sparked my interest in front-end development, and I've been learning it ever since. Moreover, I am also trying to explore other things such as Flutter, SwiftUI, etc.
+    </p>
+    <p class="hidden-text">Thanks for paying a visit!</p>
+  </div>
 
-        // Open the URL in a new window or tab
-        window.open(url);
+  <script>
+    document.getElementById("github").addEventListener("click", function() {
+      var url = "https://github.com/Laplace-88";
+      window.open(url);
+    });
+
+    document.getElementById("linkedin").addEventListener("click", function() {
+      var url = "https://www.linkedin.com/in/krish-a-105402135/";
+      window.open(url);
+    });
+
+    document.getElementById("contact").addEventListener("click", function() {
+      var url = "mailto:krisharora088@gmail.com";
+      window.open(url);
+    });
+
+    document.getElementById("about").addEventListener("click", function() {
+      var hiddenText = document.querySelectorAll(".hidden-text");
+      hiddenText.forEach(function(element) {
+        if (element.style.display === "none") {
+          element.style.display = "block";
+        } else {
+          element.style.display = "none";
+        }
       });
-      
-      document.getElementById("linkedin").addEventListener("click", function() {
-        var url = "https://www.linkedin.com/in/krish-a-105402135/";
-        window.open(url);
-      });
-      
-      document.getElementById("contact").addEventListener("click", function() {
-        var url = "mailto:krisharora088@gmail.com";
-        window.open(url);
-      });</script>
-    <body>
-        <h1 id="nameHeader">
-            &lt;/&gt;Krish Arora&lt;/&gt;
-            </h1>
-            <div><p class="hidden-text" style="display: none;">
-                I'm Krish, first year science student in the University of British Columbia, Vancouver. I'm a beginner in
-                web development and I'm currently learning front-end development, I worked on the front-end of 
-                <a href="https://github.com/peer-safe/peer-safe" class="peersafe">PeerSafe</a>
-                , a collaborative project I did at nwHacks 2023, held at UBC. That sparked my interest in front-end development
-                and I've been learning it ever since. Moreover, I am also trying to explore other things such as
-                flutter, SwiftUI, etc.
-                </p>
-                <p class="hidden-text" style="display: none;">Thanks for paying a visit!
-            </p></div>
-    </body>
-    <script>var toggleButton = document.getElementById("about");
-        var hiddenText = document.getElementById("hiddenText");
-        
-        toggleButton.addEventListener("click", function() {
-          if (hiddenText.style.display === "none") {
-            hiddenText.style.display = "block";
-          } else {
-            hiddenText.style.display = "none";
-          }
-        });
-        </script>
+    });
+  </script>
+</body>
 </html>
